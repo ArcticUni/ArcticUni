@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcticUNI — Marine Mineral Complex | Premium Calcium from Arctic Sea Urchins</title>
+    <meta name="description" content="ArcticUNI Marine Mineral Complex. Premium calcium sourced from sustainably harvested Arctic sea urchins at 69°N. Pure. Natural. Traceable.">
+    <meta name="keywords" content="ArcticUNI, marine calcium, sea urchin calcium, arctic minerals, marine mineral complex, Norway supplements">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ArcticUNI — Marine Mineral Complex">
+    <meta property="og:description" content="Premium calcium from sustainably harvested Arctic sea urchins. 69°N.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/product-bottle.png.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">ArcticUNI</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#origin">Origin</a></li>
+                <li><a href="#quality">Quality</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <canvas class="aurora-canvas" id="auroraCanvas"></canvas>
+        <div class="hero-stars" id="heroStars"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow animate-in">Marine Mineral Complex</p>
+            <h1 class="hero-title animate-in">
+                <span class="title-arctic">Arctic</span><span class="title-uni">UNI</span>
+            </h1>
+            <p class="hero-subtitle animate-in">Premium calcium from sustainably harvested sea urchins<br>in the pristine Arctic waters of Northern Norway.</p>
+            <div class="hero-location animate-in">
+                <span class="location-flag">&#127475;&#127476;</span>
+                <span class="location-text">69° North</span>
+            </div>
+            <a href="#story" class="hero-cta animate-in">Discover</a>
+        </div>
+        <div class="hero-product animate-in">
+            <img src="images/product-bottle.png.png" alt="ArcticUNI Marine Mineral Complex Calcium" class="hero-bottle">
+        </div>
+
+        <!-- Mountain Landscape -->
+        <div class="mountains-container">
+            <div class="mountain-glow"></div>
+            <!-- Back range (distant, misty blue) -->
+            <svg class="mountain-layer mountain-back" viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="mtnBack" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#2a3d5c"/>
+                        <stop offset="100%" stop-color="#1a2a4a"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0,500 L0,340 C20,338 40,330 60,310 C80,290 95,275 120,260 C140,248 155,255 175,270 C190,280 200,275 220,255 C240,235 255,220 280,200 C300,183 310,180 330,190 C345,197 355,195 370,180 C390,160 405,145 430,130 C450,118 460,120 480,135 C495,148 510,142 530,125 C548,110 558,105 580,115 C600,125 608,120 625,105 C642,90 660,80 685,75 C705,71 715,78 730,95 C745,112 755,108 770,90 C790,68 810,58 840,55 C860,53 872,60 890,78 C905,93 915,88 930,72 C950,52 968,42 1000,40 C1020,39 1032,48 1050,65 C1068,82 1078,78 1095,60 C1115,38 1135,30 1165,35 C1185,39 1195,50 1210,68 C1225,86 1240,82 1260,65 C1280,48 1300,42 1330,50 C1350,56 1365,68 1385,85 C1400,97 1418,108 1440,120 L1440,500 Z" fill="url(#mtnBack)"/>
+                <!-- Snow highlights on distant peaks -->
+                <path d="M280,200 C285,195 290,192 295,195 C292,198 286,200 280,200 Z" fill="#b8c8e0" opacity="0.4"/>
+                <path d="M430,130 C435,124 442,120 450,122 C446,128 438,132 430,130 Z" fill="#b8c8e0" opacity="0.4"/>
+                <path d="M685,75 C690,70 698,68 708,72 C702,76 692,78 685,75 Z" fill="#c0d0e4" opacity="0.5"/>
+                <path d="M840,55 C848,50 858,48 868,52 C860,58 850,58 840,55 Z" fill="#c0d0e4" opacity="0.5"/>
+                <path d="M1000,40 C1008,35 1018,33 1028,38 C1020,44 1010,44 1000,40 Z" fill="#c8d4e8" opacity="0.5"/>
+            </svg>
+            <!-- Mid range -->
+            <svg class="mountain-layer mountain-mid" viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="mtnMid" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1e3050"/>
+                        <stop offset="60%" stop-color="#142440"/>
+                        <stop offset="100%" stop-color="#0f1d35"/>
+                    </linearGradient>
+                    <linearGradient id="snowMid" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#e8f0fa"/>
+                        <stop offset="100%" stop-color="#c0d0e4"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0,500 L0,380 C30,370 50,355 80,330 C105,308 118,310 140,325 C155,335 168,328 188,305 C210,278 225,260 255,240 C278,225 290,230 310,250 C325,265 338,258 358,235 C380,210 398,195 425,178 C445,165 455,170 472,188 C485,202 498,195 518,172 C540,148 555,138 580,130 C600,124 612,132 628,150 C640,163 652,158 668,138 C688,115 705,105 735,98 C755,93 768,102 785,120 C798,134 810,128 828,108 C848,85 868,75 898,70 C918,67 930,78 948,98 C962,114 975,108 995,88 C1018,65 1038,55 1068,52 C1090,50 1102,60 1120,80 C1135,97 1148,92 1168,72 C1192,48 1212,40 1245,42 C1265,44 1278,56 1298,78 C1312,95 1325,90 1345,72 C1368,50 1390,44 1420,55 L1440,62 L1440,500 Z" fill="url(#mtnMid)"/>
+                <!-- Snow on mid peaks -->
+                <path d="M255,240 C262,232 270,228 280,232 C274,238 264,242 255,240 Z" fill="url(#snowMid)" opacity="0.7"/>
+                <path d="M425,178 C432,170 440,165 450,168 C444,176 434,180 425,178 Z" fill="url(#snowMid)" opacity="0.75"/>
+                <path d="M580,130 C588,122 598,118 610,122 C602,130 590,134 580,130 Z" fill="url(#snowMid)" opacity="0.8"/>
+                <path d="M735,98 C744,90 755,86 768,92 C758,100 746,102 735,98 Z" fill="url(#snowMid)" opacity="0.85"/>
+                <path d="M898,70 C908,62 920,58 935,65 C924,74 910,76 898,70 Z" fill="url(#snowMid)" opacity="0.8"/>
+                <path d="M1068,52 C1078,44 1090,40 1105,48 C1094,56 1080,58 1068,52 Z" fill="url(#snowMid)" opacity="0.85"/>
+                <path d="M1245,42 C1256,34 1268,30 1282,38 C1270,46 1256,48 1245,42 Z" fill="url(#snowMid)" opacity="0.8"/>
+            </svg>
+            <!-- Front range (closest, sharpest) -->
+            <svg class="mountain-layer mountain-front" viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="mtnFront" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#12203a"/>
+                        <stop offset="40%" stop-color="#0d1a30"/>
+                        <stop offset="100%" stop-color="#0a1525"/>
+                    </linearGradient>
+                    <linearGradient id="snowFront" x1="0" y1="0" x2="0.3" y2="1">
+                        <stop offset="0%" stop-color="#f0f5fc"/>
+                        <stop offset="50%" stop-color="#d8e4f2"/>
+                        <stop offset="100%" stop-color="#12203a"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0,500 L0,420 C15,415 28,405 45,388 C60,373 70,378 88,392 C100,402 112,395 128,375 C148,350 162,338 185,320 C202,306 212,312 228,330 C240,344 252,338 268,318 C290,292 305,278 330,262 C350,250 360,256 378,275 C390,290 402,284 420,262 C442,236 458,222 485,210 C505,200 515,208 530,228 C542,244 555,236 572,215 C592,190 608,178 635,168 C655,160 668,170 685,192 C698,210 712,204 730,182 C752,156 770,144 800,136 C820,130 835,140 855,162 C870,180 885,174 905,152 C928,126 948,115 980,110 C1002,107 1015,118 1035,140 C1050,158 1065,152 1085,130 C1108,104 1128,94 1160,90 C1182,88 1195,100 1215,122 C1230,140 1248,134 1268,112 C1292,86 1312,78 1345,80 C1365,82 1378,95 1398,118 C1412,135 1425,142 1440,148 L1440,500 Z" fill="url(#mtnFront)"/>
+                <!-- Snow/ice on front peaks - larger, more visible -->
+                <path d="M330,262 C338,252 348,246 360,250 C354,260 342,266 330,262 Z" fill="url(#snowFront)" opacity="0.9"/>
+                <path d="M485,210 C494,200 505,195 518,200 C508,210 496,214 485,210 Z" fill="url(#snowFront)" opacity="0.92"/>
+                <path d="M635,168 C645,158 658,152 672,158 C662,168 648,174 635,168 Z" fill="url(#snowFront)" opacity="0.95"/>
+                <path d="M800,136 C812,126 825,120 840,128 C828,138 814,142 800,136 Z" fill="url(#snowFront)" opacity="0.95"/>
+                <path d="M980,110 C992,100 1005,95 1020,104 C1008,114 994,116 980,110 Z" fill="url(#snowFront)" opacity="0.95"/>
+                <path d="M1160,90 C1172,80 1186,75 1200,84 C1188,94 1174,96 1160,90 Z" fill="url(#snowFront)" opacity="0.92"/>
+                <path d="M1345,80 C1356,70 1368,66 1382,74 C1370,84 1358,86 1345,80 Z" fill="url(#snowFront)" opacity="0.9"/>
+            </svg>
+            <!-- Fjord water reflection -->
+            <div class="fjord-water"></div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== STORY SECTION ========== -->
+    <section class="section section-story" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content">
+                    <p class="section-eyebrow animate-on-scroll">From the Arctic Deep</p>
+                    <h2 class="section-title animate-on-scroll">Nature's Most Complete<br>Marine Mineral</h2>
+                    <p class="section-text animate-on-scroll">
+                        In the pristine waters of Northern Norway, beneath the dancing aurora borealis,
+                        sea urchins thrive in one of the world's purest marine environments. Over millennia,
+                        these remarkable creatures have concentrated the ocean's mineral wealth into their shells —
+                        a natural calcium carbonate matrix enriched with essential trace minerals.
+                    </p>
+                    <p class="section-text animate-on-scroll">
+                        ArcticUNI captures this natural complexity. Unlike synthetic calcium supplements,
+                        our marine mineral complex preserves the full spectrum of naturally occurring minerals —
+                        calcium, magnesium, potassium, phosphorus, iron, zinc, and many more —
+                        exactly as nature intended.
+                    </p>
+                </div>
+                <div class="story-visual animate-on-scroll">
+                    <div class="story-image-wrapper">
+                        <div class="story-glow"></div>
+                        <div class="story-placeholder">
+                            <span class="placeholder-icon">&#10052;</span>
+                            <span>Arctic Waters</span>
+                            <span class="placeholder-sub">69° North</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCT SHOWCASE (SalmoFer-style) ========== -->
+    <section class="section section-showcase" id="product">
+        <div class="container">
+            <p class="section-eyebrow center animate-on-scroll">What We Offer</p>
+            <h2 class="section-title center showcase-title animate-on-scroll">ArcticUNI Calcium</h2>
+            <p class="section-subtitle center animate-on-scroll">Available as raw ingredient, bulk capsules, or finished white-label product.</p>
+
+            <div class="showcase-grid">
+                <div class="showcase-item animate-on-scroll">
+                    <div class="showcase-image-wrap">
+                        <div class="showcase-img-placeholder ingredient-placeholder">
+                            <div class="ingredient-visual">
+                                <div class="powder-circle"></div>
+                                <div class="powder-ring"></div>
+                            </div>
+                        </div>
+                        <img src="images/ingredient.png" alt="ArcticUNI sea urchin mineral powder" class="showcase-img" onerror="this.style.display='none'; this.previousElementSibling.style.display='flex';">
+                    </div>
+                    <h3 class="showcase-label">ArcticUNI<span class="showcase-reg">&reg;</span><br>Ingredient</h3>
+                </div>
+
+                <div class="showcase-item animate-on-scroll">
+                    <div class="showcase-image-wrap">
+                        <div class="showcase-img-placeholder bulk-placeholder">
+                            <div class="capsule-visual">
+                                <div class="capsule-shape">
+                                    <div class="capsule-top"></div>
+                                    <div class="capsule-bottom"></div>
+                                </div>
+                                <div class="powder-base"></div>
+                            </div>
+                        </div>
+                        <img src="images/bulk.png" alt="ArcticUNI bulk capsules" class="showcase-img" onerror="this.style.display='none'; this.previousElementSibling.style.display='flex';">
+                    </div>
+                    <h3 class="showcase-label">ArcticUNI<span class="showcase-reg">&reg;</span><br>Bulk</h3>
+                </div>
+
+                <div class="showcase-item animate-on-scroll">
+                    <div class="showcase-image-wrap">
+                        <div class="showcase-img-placeholder bottle-placeholder">
+                            <img src="images/product-bottle.png.png" alt="ArcticUNI white label bottle" class="showcase-bottle-img" onerror="this.parentElement.classList.add('show-fallback');">
+                        </div>
+                    </div>
+                    <h3 class="showcase-label">ArcticUNI<span class="showcase-reg">&reg;</span><br>White Label</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCT DETAILS SECTION ========== -->
+    <section class="section section-product">
+        <div class="container">
+            <p class="section-eyebrow center animate-on-scroll">Product Details</p>
+            <h2 class="section-title center animate-on-scroll">Marine Mineral Complex</h2>
+            <p class="section-subtitle center animate-on-scroll">60 Capsules per retail unit</p>
+
+            <div class="product-grid">
+                <div class="product-image animate-on-scroll">
+                    <div class="product-glow"></div>
+                    <img src="images/product-bottle.png.png" alt="ArcticUNI Calcium bottle" class="product-bottle">
+                </div>
+
+                <div class="product-details animate-on-scroll">
+                    <h3 class="product-details-title">Per Capsule Contains</h3>
+                    <table class="product-table">
+                        <tbody>
+                            <tr>
+                                <td>Marine CaCO&#8323; (Urchin derived)</td>
+                                <td>1000 mg</td>
+                            </tr>
+                            <tr>
+                                <td>Calcium</td>
+                                <td>250 mg</td>
+                            </tr>
+                            <tr>
+                                <td>Magnesium</td>
+                                <td>13 mg</td>
+                            </tr>
+                            <tr>
+                                <td>Potassium</td>
+                                <td>3.4 mg</td>
+                            </tr>
+                            <tr>
+                                <td>Phosphorus</td>
+                                <td>1.2 mg</td>
+                            </tr>
+                            <tr>
+                                <td>Iron</td>
+                                <td>0.09 mg</td>
+                            </tr>
+                            <tr>
+                                <td>Zinc</td>
+                                <td>19 &micro;g</td>
+                            </tr>
+                            <tr class="trace-row">
+                                <td colspan="2">Plus many more trace minerals</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="product-capsule-note">Vegetable capsule — 250 mg</p>
+                </div>
+
+                <div class="product-badges animate-on-scroll">
+                    <div class="badge">
+                        <div class="badge-icon">&#9670;</div>
+                        <span>Natural<br>Ingredients</span>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">&#9673;</div>
+                        <span>No<br>Impurities</span>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">&#10003;</div>
+                        <span>Non-GMO</span>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">&#9827;</div>
+                        <span>No<br>Preservatives</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFITS SECTION ========== -->
+    <section class="section section-benefits" id="benefits">
+        <div class="container">
+            <p class="section-eyebrow center animate-on-scroll">Why ArcticUNI</p>
+            <h2 class="section-title center animate-on-scroll">The Arctic Advantage</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-number">01</div>
+                    <h3 class="benefit-title">Bone Health & Strength</h3>
+                    <p class="benefit-text">
+                        Calcium is essential for maintaining strong bones and teeth. ArcticUNI delivers
+                        250 mg of marine-derived calcium per capsule — a highly bioavailable form
+                        your body can readily absorb and utilize.
+                    </p>
+                </div>
+
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-number">02</div>
+                    <h3 class="benefit-title">Natural Marine Source</h3>
+                    <p class="benefit-text">
+                        Unlike synthetic calcium supplements, ArcticUNI is derived entirely from Arctic sea urchins.
+                        This whole-food marine source preserves the natural mineral matrix,
+                        providing calcium in the form nature designed.
+                    </p>
+                </div>
+
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-number">03</div>
+                    <h3 class="benefit-title">Rich Trace Mineral Profile</h3>
+                    <p class="benefit-text">
+                        Beyond calcium, each capsule contains magnesium, potassium, phosphorus,
+                        iron, zinc, and a spectrum of trace minerals — a complete marine mineral
+                        complex working in natural synergy.
+                    </p>
+                </div>
+
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-number">04</div>
+                    <h3 class="benefit-title">Cardiovascular Support</h3>
+                    <p class="benefit-text">
+                        The synergistic combination of calcium, magnesium, and potassium supports
+                        healthy cardiovascular function. These essential minerals work together to help
+                        maintain normal blood pressure and heart rhythm.
+                    </p>
+                </div>
+
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-number">05</div>
+                    <h3 class="benefit-title">Cellular Protection</h3>
+                    <p class="benefit-text">
+                        Sea urchins contain naturally occurring antioxidant compounds, including unique
+                        pigments (spinochromes) that help protect cells from oxidative stress and support
+                        the body's natural defense systems.
+                    </p>
+                </div>
+
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-number">06</div>
+                    <h3 class="benefit-title">Pure & Sustainable</h3>
+                    <p class="benefit-text">
+                        Sustainably harvested from the pristine Arctic waters at 69° North.
+                        No additives, no preservatives, no GMOs. Just pure marine minerals in a
+                        vegetable capsule — nothing more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ORIGIN SECTION ========== -->
+    <section class="section section-origin" id="origin">
+        <div class="container">
+            <div class="origin-grid">
+                <div class="origin-visual animate-on-scroll">
+                    <div class="origin-badge">
+                        <svg class="origin-flag" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg" width="44" height="32">
+                            <rect width="22" height="16" fill="#BA0C2F"/>
+                            <rect x="6" width="4" height="16" fill="#fff"/>
+                            <rect y="6" width="22" height="4" fill="#fff"/>
+                            <rect x="7" width="2" height="16" fill="#00205B"/>
+                            <rect y="7" width="22" height="2" fill="#00205B"/>
+                        </svg>
+                        <span class="origin-degree">69°</span>
+                        <span class="origin-north">North</span>
+                    </div>
+                    <div class="origin-map">
+                        <div class="map-marker">
+                            <span class="marker-pulse"></span>
+                            <span class="marker-label">Troms, Norway</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="origin-content">
+                    <p class="section-eyebrow animate-on-scroll">Origin</p>
+                    <h2 class="section-title animate-on-scroll">From Arctic Waters<br>to You</h2>
+                    <p class="section-text animate-on-scroll">
+                        ArcticUNI originates from the cold, clean waters off the coast of Northern Norway,
+                        far above the Arctic Circle. Here, minimal pollution and extreme conditions
+                        produce sea urchins with an exceptionally pure and consistent mineral profile.
+                    </p>
+                    <p class="section-text animate-on-scroll">
+                        Every batch is fully traceable — from the specific harvesting location
+                        in the Arctic Sea to the finished capsule in your hands. We maintain complete
+                        transparency across our entire supply chain, ensuring the purity and quality
+                        that defines ArcticUNI.
+                    </p>
+                    <div class="origin-stats animate-on-scroll">
+                        <div class="stat">
+                            <span class="stat-value">69°N</span>
+                            <span class="stat-label">Arctic Origin</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">Traceable</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">60</span>
+                            <span class="stat-label">Capsules</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== QUALITY SECTION ========== -->
+    <section class="section section-quality" id="quality">
+        <div class="container">
+            <p class="section-eyebrow center animate-on-scroll">Quality Assurance</p>
+            <h2 class="section-title center animate-on-scroll">Verified Purity</h2>
+            <p class="section-subtitle center animate-on-scroll">
+                Every batch undergoes rigorous third-party testing to guarantee safety, purity, and consistency.
+            </p>
+
+            <div class="quality-grid">
+                <div class="quality-card animate-on-scroll">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M16 24l5 5 11-11"/>
+                        </svg>
+                    </div>
+                    <h3>Third-Party Verified</h3>
+                    <p>Independent analysis by EuroFins — one of the world's leading testing laboratories.</p>
+                </div>
+                <div class="quality-card animate-on-scroll">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="6" width="32" height="36" rx="2"/>
+                            <line x1="14" y1="14" x2="34" y2="14"/>
+                            <line x1="14" y1="22" x2="34" y2="22"/>
+                            <line x1="14" y1="30" x2="26" y2="30"/>
+                        </svg>
+                    </div>
+                    <h3>Certificate of Analysis</h3>
+                    <p>Full COA available for every production batch, documenting complete mineral composition.</p>
+                </div>
+                <div class="quality-card animate-on-scroll">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4l6 2v10c0 10-6 18-6 18s-6-8-6-18V6l6-2z"/>
+                            <path d="M20 20l3 3 5-6"/>
+                        </svg>
+                    </div>
+                    <h3>Heavy Metals Tested</h3>
+                    <p>Comprehensive heavy metals screening ensures every capsule meets the strictest safety standards.</p>
+                </div>
+                <div class="quality-card animate-on-scroll">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="8"/>
+                            <circle cx="24" cy="24" r="16"/>
+                            <line x1="24" y1="4" x2="24" y2="8"/>
+                            <line x1="24" y1="40" x2="24" y2="44"/>
+                            <line x1="4" y1="24" x2="8" y2="24"/>
+                            <line x1="40" y1="24" x2="44" y2="24"/>
+                        </svg>
+                    </div>
+                    <h3>Full Batch Traceability</h3>
+                    <p>Complete process flow documentation from Arctic harvesting to finished product.</p>
+                </div>
+            </div>
+
+            <div class="quality-shelf animate-on-scroll">
+                <p><strong>Shelf Life:</strong> 36 months &nbsp;|&nbsp; <strong>Storage:</strong> Cool, dry place — avoid direct sunlight</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT / COMPANY SECTION ========== -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="section-eyebrow animate-on-scroll">The Company</p>
+                    <h2 class="section-title animate-on-scroll">Developed by<br>Marine Spark X</h2>
+                    <p class="section-text animate-on-scroll">
+                        ArcticUNI is developed by Marine Spark X together with its partners.
+                        Based in Troms, Northern Norway, we are dedicated to unlocking the potential
+                        of Arctic marine resources through innovation, sustainability, and uncompromising quality.
+                    </p>
+                    <p class="section-text animate-on-scroll">
+                        Our mission is to bring the purity and power of Arctic marine ingredients
+                        to the global market — creating premium products that honour both
+                        nature and science.
+                    </p>
+                </div>
+                <div class="about-details animate-on-scroll">
+                    <div class="about-info">
+                        <h4>Head Office</h4>
+                        <p>Framstredet 10<br>Troms, Norway</p>
+                    </div>
+                    <div class="about-info">
+                        <h4>Contact</h4>
+                        <p>martin@marinesparkx.com<br>+47 936 21 974</p>
+                    </div>
+                    <div class="about-info">
+                        <h4>Website</h4>
+                        <p><a href="https://www.marinesparkx.com" target="_blank" rel="noopener">www.marinesparkx.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT CTA SECTION ========== -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-inner animate-on-scroll">
+                <h2 class="contact-title">Interested in ArcticUNI?</h2>
+                <p class="contact-text">
+                    We are looking for distribution partners worldwide.<br>
+                    Get in touch to learn more about ArcticUNI and partnership opportunities.
+                </p>
+                <a href="mailto:martin@marinesparkx.com" class="contact-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">ArcticUNI</span>
+                    <p class="footer-tagline">Marine Mineral Complex</p>
+                    <p class="footer-origin">&#127475;&#127476; 69° North — Northern Norway</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#origin">Origin</a></li>
+                        <li><a href="#quality">Quality</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Marine Spark X</p>
+                    <p>Framstredet 10, Troms, Norway</p>
+                    <p><a href="mailto:martin@marinesparkx.com">martin@marinesparkx.com</a></p>
+                    <p><a href="tel:+4793621974">+47 936 21 974</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArcticUNI by Marine Spark X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
